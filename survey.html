@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Survey to improve Your Name's portfolio website.">
+  <title>Survey | Joshua Jackson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html" class="active">Survey</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+  <main>
+    <h1>Website Feedback Survey</h1>
+    <form id="survey-form" novalidate>
+      <fieldset>
+        <legend>How would you rate the website?</legend>
+        <label><input type="radio" name="rating" value="excellent" required> Excellent</label>
+        <label><input type="radio" name="rating" value="good"> Good</label>
+        <label><input type="radio" name="rating" value="average"> Average</label>
+      </fieldset>
+      <fieldset>
+        <legend>Which sections did you like?</legend>
+        <label><input type="checkbox" name="section" value="home"> Homepage</label>
+        <label><input type="checkbox" name="section" value="about"> About</label>
+        <label><input type="checkbox" name="section" value="projects"> Projects</label>
+      </fieldset>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" required aria-required="true"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="survey-feedback"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Joshua Jackson. T23-03-15265. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

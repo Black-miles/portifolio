@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of web development projects by Your Name.">
+  <title>Projects | Joshua Jackson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+  <main class="three-column">
+    <h1>My Projects</h1>
+    <article class="project-card">
+      <h2>Project 1</h2>
+      <img src="./images/project1.png" alt="Screenshot of Project 1" usemap="#project1-map">
+      <map name="project1-map">
+        <area shape="rect" coords="0,0,100,100" href="https://example.com" alt="Visit Project 1">
+      </map>
+      <p>A web app built with React.</p>
+      <button class="toggle-details">Show Details</button>
+      <div class="details" style="display: none;">Built with React and Node.js.</div>
+    </article>
+    <article class="project-card">
+      <h2>Project 2</h2>
+      <img src="./images/project2.png" alt="Screenshot of Project 2">
+      <p>A portfolio site using Django.</p>
+      <button class="toggle-details">Show Details</button>
+      <div class="details" style="display: none;">Used Django and PostgreSQL.</div>
+    </article>
+    <article class="project-card">
+      <h2>Project 3</h2>
+      <img src="./images/project3.png" alt="Screenshot of Project 3">
+      <p>A static site with HTML/CSS.</p>
+      <button class="toggle-details">Show Details</button>
+      <div class="details" style="display: none;">Hosted on GitHub Pages.</div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 Joshua Jackson. T23-03-15265. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
